@@ -20,7 +20,7 @@ Ubuntu (20.04+)
 sudo apt-get install libicu-dev cmake
 ```
 
-### Publish with NativeAOT
+## Publish with NativeAOT
 
 ```bash
 dotnet publish -r <RID> -c Release
@@ -28,3 +28,7 @@ dotnet publish -r <RID> -c Release
 # Build for Windows example
 dotnet publish -r win-x64 -c Release
 ```
+
+## Screenshot
+
+![screenshot](https://user-images.githubusercontent.com/32838371/206871289-5cc1bd68-3c97-437b-affc-2757e65204a4.png)
