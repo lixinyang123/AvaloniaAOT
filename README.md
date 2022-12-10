@@ -1,3 +1,3 @@
 # AvaloniaAOT
 
-Avalonia Native AOT Sample.
+Avalonia Native AOT Templete.
