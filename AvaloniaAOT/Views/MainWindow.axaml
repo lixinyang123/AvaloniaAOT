@@ -6,7 +6,8 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaAOT.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="AvaloniaAOT">
+        Title="AvaloniaAOT"
+        ExtendClientAreaToDecorationsHint="True">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
