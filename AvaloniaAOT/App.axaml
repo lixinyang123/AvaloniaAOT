@@ -1,13 +1,14 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="using:AvaloniaAOT"
+			 xmlns:themes="clr-namespace:Avalonia.Themes.Fluent;assembly=Avalonia.Themes.Fluent"
              x:Class="AvaloniaAOT.App">
+	
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
 
     <Application.Styles>
-        <!--<FluentTheme Mode="Light"/>-->
-		<FluentTheme Mode="Dark"/>
+		<themes:FluentTheme />
     </Application.Styles>
 </Application>
