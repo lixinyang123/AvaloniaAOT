@@ -29,6 +29,16 @@ dotnet publish -r <RID> -c Release
 dotnet publish -r win-x64 -c Release
 ```
 
+## Builder the installer with NSIS
+
+NSIS installer `~20MB usage`
+
+```bash
+pwsh ./publish.ps1
+```
+
+> if you builder the installer with nsis, you can ignore upx compression, so you can get better startup performance.
+
 ## Screenshot
 
 ![screenshot](https://user-images.githubusercontent.com/32838371/206871289-5cc1bd68-3c97-437b-affc-2757e65204a4.png)
