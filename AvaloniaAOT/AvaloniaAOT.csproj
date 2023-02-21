@@ -38,7 +38,7 @@
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview4" />
         <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview4" />
 		<!--Compresse with UPX-->
-		<PackageReference Include="PublishAotCompressed" Version="1.0.0" />
+		<!-- <PackageReference Include="PublishAotCompressed" Version="1.0.0" /> -->
         <PackageReference Include="XamlNameReferenceGenerator" Version="1.5.1" />
     </ItemGroup>
 </Project>
