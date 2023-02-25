@@ -1,6 +1,6 @@
 # AvaloniaAOT
 
-Avalonia Native AOT Templete, Smaller size, lower memory usage and faster startup speed `~18MB size`
+Avalonia Native AOT Templete. Smaller size, lower memory usage and faster startup speed. `~18MB size`
 
 ![image](https://user-images.githubusercontent.com/32838371/221381097-886b1a7b-4b77-42fe-8644-12fde7c48b9d.png)
 
