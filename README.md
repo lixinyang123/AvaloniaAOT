@@ -1,6 +1,6 @@
 # AvaloniaAOT
 
-Avalonia Native AOT Templete. `~20MB size`
+Avalonia Native AOT Templete. `< 20MB size`
 
 ![image](https://user-images.githubusercontent.com/32838371/206870017-f7354f1f-797d-4c5f-981b-8b57f5529b61.png)
 
@@ -31,7 +31,7 @@ dotnet publish -r win-x64 -c Release
 
 ## Builder the installer with NSIS
 
-NSIS installer `~20MB usage`
+NSIS installer `~13MB size`
 
 ```bash
 pwsh ./publish.ps1
