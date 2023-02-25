@@ -1,8 +1,10 @@
 # AvaloniaAOT
 
-Avalonia Native AOT Templete. `< 20MB size`
+Avalonia Native AOT Templete
 
-![image](https://user-images.githubusercontent.com/32838371/206870017-f7354f1f-797d-4c5f-981b-8b57f5529b61.png)
+> Smaller size, lower memory usage and faster startup speed `~18MB size`
+
+![image](https://user-images.githubusercontent.com/32838371/221381097-886b1a7b-4b77-42fe-8644-12fde7c48b9d.png)
 
 You can disable UPX Compresse to get lower memory usage. `~20MB usage`
 
@@ -11,13 +13,13 @@ You can disable UPX Compresse to get lower memory usage. `~20MB usage`
 Windows
 
 ```bash
-Visual Studio 2022, including Desktop development with C++ workload.
+Visual Studio 2022, including .NET 8 & Desktop development with C++ workload.
 ```
 
 Ubuntu (20.04+)
 
 ```bash
-sudo apt-get install libicu-dev cmake
+sudo apt-get install dotnet-sdk-8.0 libicu-dev cmake
 ```
 
 ## Publish with NativeAOT
