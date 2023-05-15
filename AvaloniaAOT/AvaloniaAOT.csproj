@@ -5,9 +5,9 @@
         <Nullable>enable</Nullable>
         <TrimMode>copyused</TrimMode>
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-		<!--Public AOT-->
-		<PublishAot>true</PublishAot>
-		<StripSymbols>true</StripSymbols>
+	<!--Public AOT-->
+	<PublishAot>true</PublishAot>
+	<StripSymbols>true</StripSymbols>
     </PropertyGroup>
 	
     <ItemGroup>
@@ -36,7 +36,7 @@
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0-preview8" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview8" />
         <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview8" />
-		<!--Compresse with UPX-->
-		<!-- <PackageReference Include="PublishAotCompressed" Version="1.0.0" /> -->
+	<!--Compresse with UPX-->
+	<!-- <PackageReference Include="PublishAotCompressed" Version="1.0.0" /> -->
     </ItemGroup>
 </Project>
