@@ -5,9 +5,9 @@
         <Nullable>enable</Nullable>
         <TrimMode>copyused</TrimMode>
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-	<!--Public AOT-->
-	<PublishAot>true</PublishAot>
-	<StripSymbols>true</StripSymbols>
+        <!--Public AOT-->
+        <PublishAot>true</PublishAot>
+        <StripSymbols>true</StripSymbols>
     </PropertyGroup>
 	
     <ItemGroup>
