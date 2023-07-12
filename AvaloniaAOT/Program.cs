@@ -1,4 +1,5 @@
 using Avalonia;
+using Avalonia.Media;
 using Avalonia.ReactiveUI;
 using System;
 
@@ -19,10 +20,18 @@ namespace AvaloniaAOT
         // Avalonia configuration, don't remove; also used by visual designer.
         public static AppBuilder BuildAvaloniaApp()
         {
+            FontManagerOptions options = new();
+
+            if (OperatingSystem.IsLinux())
+            {
+                options.DefaultFamilyName = "Arial";
+            }
+
             return AppBuilder.Configure<App>()
-                        .UsePlatformDetect()
-                        .LogToTrace()
-                        .UseReactiveUI();
+                .UsePlatformDetect()
+                .LogToTrace()
+                .UseReactiveUI()
+                .With(options);
         }
     }
 }
