@@ -30,7 +30,7 @@
     </ItemGroup>
 	
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.0.1" />
+        <PackageReference Include="Avalonia" Version="11.0.2" />
         <PackageReference Include="Avalonia.Desktop" Version="11.0.2" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
 
