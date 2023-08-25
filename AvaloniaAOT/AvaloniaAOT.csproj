@@ -7,6 +7,7 @@
         <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
         <!--Public AOT-->
         <PublishAot>true</PublishAot>
+        <InvariantGlobalization>true</InvariantGlobalization>
         <StripSymbols>true</StripSymbols>
     </PropertyGroup>
 	
