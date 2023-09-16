@@ -38,6 +38,6 @@
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.4" />
         <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.4" />
 	<!--Compresse with UPX-->
-	<PackageReference Include="PublishAotCompressed" Version="1.0.1" /> 
+	<PackageReference Include="PublishAotCompressed" Version="1.0.2" /> 
     </ItemGroup>
 </Project>
