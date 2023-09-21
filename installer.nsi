@@ -16,7 +16,7 @@
   Unicode True
 
   ;Default installation folder
-  InstallDir "$LOCALAPPDATA\Demo"
+  InstallDir "$LOCALAPPDATA\AvaloniaAOT"
   
   ;Get installation folder from registry if available
   ;InstallDirRegKey HKCU "Software\Modern UI Test" ""
