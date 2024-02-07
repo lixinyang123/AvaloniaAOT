@@ -1,5 +1,4 @@
 using Avalonia;
-using Avalonia.Media;
 using Avalonia.ReactiveUI;
 using System;
 
@@ -11,26 +10,15 @@ namespace AvaloniaAOT
         // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
         // yet and stuff might break.
         [STAThread]
-        public static void Main(string[] args)
-        {
-            _ = BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
-        }
+        public static void Main(string[] args) => BuildAvaloniaApp()
+            .StartWithClassicDesktopLifetime(args);
 
         // Avalonia configuration, don't remove; also used by visual designer.
         public static AppBuilder BuildAvaloniaApp()
-        {
-            FontManagerOptions options = new();
-
-            if (OperatingSystem.IsLinux())
-            {
-                options.DefaultFamilyName = "Arial";
-            }
-
-            return AppBuilder.Configure<App>()
+            => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
+                .WithInterFont()
                 .LogToTrace()
-                .UseReactiveUI()
-                .With(options);
-        }
+                .UseReactiveUI();
     }
 }

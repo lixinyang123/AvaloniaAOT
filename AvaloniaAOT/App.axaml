@@ -1,14 +1,14 @@
-<Application xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="using:AvaloniaAOT"
-			 xmlns:themes="clr-namespace:Avalonia.Themes.Fluent;assembly=Avalonia.Themes.Fluent"
-             x:Class="AvaloniaAOT.App">
-	
+<Application xmlns="https://github.com/avaloniaui" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:AvaloniaAOT"
+        x:Class="AvaloniaAOT.App"
+        RequestedThemeVariant="Default">
+
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
 
     <Application.Styles>
-		<themes:FluentTheme />
+        <FluentTheme />
     </Application.Styles>
 </Application>
