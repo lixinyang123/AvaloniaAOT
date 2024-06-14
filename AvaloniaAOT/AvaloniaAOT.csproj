@@ -40,6 +40,6 @@
         <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.10" />
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.10" />
         <!--Compresse with UPX-->
-        <PackageReference Include="PublishAotCompressed" Version="1.0.3" />
+        <!-- <PackageReference Include="PublishAotCompressed" Version="1.0.3" /> -->
     </ItemGroup>
 </Project>
