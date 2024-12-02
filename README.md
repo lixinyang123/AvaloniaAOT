@@ -11,13 +11,13 @@ You can disable UPX Compresse to get lower memory usage. `~20MB usage`
 Windows
 
 ```bash
-Visual Studio 2022, including .NET 8 & Desktop development with C++ workload.
+Visual Studio 2022, including .NET 9 & Desktop development with C++ workload.
 ```
 
 Ubuntu (20.04+)
 
 ```bash
-sudo apt-get install dotnet-sdk-8.0 libicu-dev cmake zlib1g-dev -y
+sudo apt-get install dotnet9 libicu-dev cmake zlib1g-dev -y
 ```
 
 ## Publish with NativeAOT
