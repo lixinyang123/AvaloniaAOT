@@ -53,7 +53,7 @@ Section "Dummy Section" SecDummy
   SetOutPath "$INSTDIR"
   
   ;ADD YOUR OWN FILES HERE...
-  File /nonfatal /r "AvaloniaAOT\bin\Release\net8.0\win-x64\publish\*.*"
+  File /nonfatal /r "AvaloniaAOT\bin\Release\net9.0\win-x64\publish\*.*"
   ;Create uninstaller
   WriteUninstaller "$INSTDIR\Uninstall.exe"
   
