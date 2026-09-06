@@ -11,7 +11,7 @@ You can disable UPX Compresse to get lower memory usage. `~20MB usage`
 Windows
 
 ```bash
-Visual Studio 2022, including .NET 9 & Desktop development with C++ workload.
+Visual Studio 2022, including .NET 10 & Desktop development with C++ workload.
 ```
 
 Ubuntu (20.04+)
@@ -31,7 +31,7 @@ dotnet publish -r win-x64 -c Release
 
 ## Builder the installer with NSIS
 
-NSIS installer `~13MB size`
+NSIS installer `~15MB size`
 
 ```bash
 pwsh ./publish.ps1

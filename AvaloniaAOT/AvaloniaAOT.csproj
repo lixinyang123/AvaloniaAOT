@@ -1,27 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
-        <TrimMode>copyused</TrimMode>
-        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+
         <!--Public AOT-->
         <PublishAot>true</PublishAot>
+        <IsAotCompatible>true</IsAotCompatible>
         <InvariantGlobalization>true</InvariantGlobalization>
         <StripSymbols>true</StripSymbols>
-        <NoWarn>IL2057;IL2026;IL2104;IL3053</NoWarn>
+        <BuiltInComInteropSupport>false</BuiltInComInteropSupport>
+        <NoWarn>IL2026</NoWarn>
     </PropertyGroup>
-	
-    <ItemGroup>
-		<Content Include=".ReflectionDefine\**" />
-		<AvaloniaResource Include="Assets\**" />
-        <None Remove=".gitignore" />
-    </ItemGroup>
-	
-	<!--AOT Reflection Define-->
-	<ItemGroup>
-		<TrimmerRootDescriptor Include=".ReflectionDefine\Avalonia.xml" />
-	</ItemGroup>
 
 	<ItemGroup>
         <!--This helps with theme dll-s trimming.
@@ -30,18 +20,24 @@
         <TrimmableAssembly Include="Avalonia.Themes.Fluent" />
         <TrimmableAssembly Include="Avalonia.Themes.Default" />
     </ItemGroup>
-	
+
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.3.6" />
-        <PackageReference Include="Avalonia.Desktop" Version="11.3.6" />
-        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.3.6" />
-        <PackageReference Include="Avalonia.ReactiveUI" Version="11.3.6" />
-        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.3.6" />
-        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.3.6" />
-        <!--Compresse with UPX-->
+        <None Remove=".gitignore" />
+		<AvaloniaResource Include="Assets\**" />
+        <TrimmerRootAssembly Include="AvaloniaAOT" />
+    </ItemGroup>
+
+    <ItemGroup>
+		<PackageReference Include="Avalonia" Version="12.1.2" />
+		<PackageReference Include="Avalonia.Desktop" Version="12.1.2" />
+		<PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.2" />
+		<PackageReference Include="Avalonia.Fonts.Inter" Version="12.1.2" />
+		<PackageReference Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3">
+			<IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+			<PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<!--Compresse with UPX-->
         <!-- <PackageReference Include="PublishAotCompressed" Version="1.0.3" /> -->
-    <PackageReference Include="Microsoft.DotNet.ILCompiler" Version="9.0.9" />
-    <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="9.0.9" />
     </ItemGroup>
 </Project>
