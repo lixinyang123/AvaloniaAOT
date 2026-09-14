@@ -4,7 +4,7 @@
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
 
-        <!--Public AOT-->
+        <!--Publish AOT-->
         <PublishAot>true</PublishAot>
         <IsAotCompatible>true</IsAotCompatible>
         <InvariantGlobalization>true</InvariantGlobalization>
@@ -13,16 +13,7 @@
         <NoWarn>IL2026</NoWarn>
     </PropertyGroup>
 
-	<ItemGroup>
-        <!--This helps with theme dll-s trimming.
-        If you will publish your application in self-contained mode with p:PublishTrimmed=true and it will use Fluent theme Default theme will be trimmed from the output and vice versa.
-        https://github.com/AvaloniaUI/Avalonia/issues/5593 -->
-        <TrimmableAssembly Include="Avalonia.Themes.Fluent" />
-        <TrimmableAssembly Include="Avalonia.Themes.Default" />
-    </ItemGroup>
-
     <ItemGroup>
-        <None Remove=".gitignore" />
 		<AvaloniaResource Include="Assets\**" />
         <TrimmerRootAssembly Include="AvaloniaAOT" />
     </ItemGroup>
